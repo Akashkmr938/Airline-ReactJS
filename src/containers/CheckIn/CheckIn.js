@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { httpGet, httpPut } from '../../utils/api/http-calls';
 import Addons from '../../components/feature/Addons/Addons';
 import { withRouter } from 'react-router-dom';
-import CheckInStyles from './CheckIn.module.css'
+import CheckInStyles from './CheckIn.module.scss'
 
 const useStyles = makeStyles(theme => ({
     container: {

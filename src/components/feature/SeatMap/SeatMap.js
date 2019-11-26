@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import SeatMapStyles from './SeatMap.module.css';
+import SeatMapStyles from './SeatMap.module.scss';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const SeatMap = (props) => {

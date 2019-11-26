@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import PassengerStyles from './PassengerDetails.module.css';
+import PassengerStyles from './PassengerDetails.module.scss';
 
 const useStyles = makeStyles(theme => ({
     root: {

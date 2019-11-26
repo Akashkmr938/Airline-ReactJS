@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { httpGet } from '../../utils/api/http-calls';
 import FlightDetails from '../../components/feature/FlightDetails/FlightDetails';
 import SeatMap from '../../components/feature/SeatMap/SeatMap';
-import FlightDataStyles from './FlightData.module.css';
+import FlightDataStyles from './FlightData.module.scss';
 import PassengerDetails from '../../components/feature/PassengerDetails/PassengerDetails';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';

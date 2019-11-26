@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import { ReactComponent as Logo } from './../../../assets/img/logo.svg';
 import { withRouter } from 'react-router-dom';
-import HeaderStyles from './Header.module.css';
+import HeaderStyles from './Header.module.scss';
 import SignIn from '../Login/Login';
 
 const useStyles = makeStyles(theme => ({

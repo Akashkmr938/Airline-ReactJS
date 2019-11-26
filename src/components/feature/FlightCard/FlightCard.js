@@ -4,7 +4,7 @@ import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
-import FlightcardStyles from './FlightCard.module.css';
+import FlightcardStyles from './FlightCard.module.scss';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import FlightLandIcon from '@material-ui/icons/FlightLand';
 import Fab from '@material-ui/core/Fab';

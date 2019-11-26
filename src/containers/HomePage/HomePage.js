@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FlightCard from '../../components/feature/FlightCard/FlightCard';
-import HomePageStyles from './HomePage.module.css';
+import HomePageStyles from './HomePage.module.scss';
 import { httpGet } from '../../utils/api/http-calls';
 import { connect } from 'react-redux';
 

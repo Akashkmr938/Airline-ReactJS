@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import CheckInSeatStyles from './CheckInSeats.module.css';
+import CheckInSeatStyles from './CheckInSeats.module.scss';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const CheckInSeats = (props) => {

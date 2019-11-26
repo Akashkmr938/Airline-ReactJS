@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import CheckedInStyles from './CheckedIn.module.css'
+import CheckedInStyles from './CheckedIn.module.scss'
 import { Button } from '@material-ui/core'
 
 

@@ -1,5 +1,5 @@
 import React, { Suspense, Fragment } from 'react';
-import LayoutStyles from './Layout.module.css';
+import LayoutStyles from './Layout.module.scss';
 import { Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';

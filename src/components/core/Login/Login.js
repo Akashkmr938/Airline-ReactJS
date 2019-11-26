@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { IS_ADMIN } from './../../../store/actions/types';
 import { withRouter } from 'react-router-dom';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import LoginStyles from './Login.module.css';
+import LoginStyles from './Login.module.scss';
 import { httpGet } from '../../../utils/api/http-calls';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';

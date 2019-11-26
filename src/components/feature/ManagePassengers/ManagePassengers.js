@@ -4,7 +4,7 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
-import manageStyles from './ManagePassengers.module.css';
+import manageStyles from './ManagePassengers.module.scss';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import PersonOutlineTwoToneIcon from '@material-ui/icons/PersonOutlineTwoTone';

@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import SeatMap from '../../components/feature/SeatMap/SeatMap';
 import PassengerDetails from '../../components/feature/PassengerDetails/PassengerDetails';
-import FlightInStyles from './Flightin.module.css';
+import FlightInStyles from './Flightin.module.scss';
 import Addons from '../../components/feature/Addons/Addons';
 import { TextField, Button } from '@material-ui/core';
 

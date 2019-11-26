@@ -12,7 +12,7 @@ import ManagePassengers from '../../components/feature/ManagePassengers/ManagePa
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Addons from '../../components/feature/Addons/Addons';
-import AdminStyles from './Admin.module.css';
+import AdminStyles from './Admin.module.scss';
 import Modal from './../../components/shared/Modal/Modal';
 
 TabPanel.propTypes = {
