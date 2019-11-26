@@ -1,0 +1,21 @@
+.button {
+    margin: 25px;
+}
+
+.detailsWrapper {
+    display: flex;
+}
+
+.managePassenegrs {
+    width: 50%;
+    float: right;
+}
+
+.addons {
+    width: 50%;
+    float: right;
+}
+
+.erroList {
+    float: left;
+}

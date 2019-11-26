@@ -1,0 +1,27 @@
+.wrapper {
+    float: left;
+    width: 30%;
+    margin: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.keytext {
+    font-weight: 700;
+    width: 50%;
+    display: inline-block;
+    font-stretch: ultra-expanded
+}
+
+.innerText {
+    font-stretch: ultra-expanded;
+    color: #2E3B55;
+    font-weight: 900;
+}
+
+.textStyle {
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -1,0 +1,23 @@
+.wrapper {
+    display: inline-flex;
+}
+
+.parentWrapper {
+    width: fit-content;
+}
+
+.avatar {
+    font-size: 15px;
+}
+
+.avatarWrap {
+    display: flex;
+}
+
+.avatarIcon {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}

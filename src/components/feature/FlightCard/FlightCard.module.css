@@ -1,0 +1,22 @@
+.cardDetails {
+  width: 100%;
+  display: inline-flex;
+}
+
+.flightButtons {
+  display: block;
+}
+
+.buttonHover:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 480px) {
+  .expansionPanel {
+    display: block;
+  }
+  .cardDetails {
+      display: block;
+  }
+}
