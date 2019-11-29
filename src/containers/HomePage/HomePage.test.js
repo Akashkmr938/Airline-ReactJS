@@ -5,37 +5,37 @@ import { HomePage } from './HomePage';
 import FlightCard from '../../components/feature/FlightCard/FlightCard';
 
 configure({ adapter: new Adapter() });
+window.scrollTo = jest.fn();
 
 describe('<HomePage />', () => {
     let wrapper;
     beforeEach(() => {
         wrapper = shallow(<HomePage />);
-        window.alert = jest.fn();
     });
 
     it('should render wrapper', () => {
         wrapper.setProps({ isAdmin: false });
-        window.alert.mockClear();
+        window.scrollTo.mockClear();
         expect(wrapper.exists()).toBe(true);
     });
     it('should render <FlightCard /> initially', () => {
         wrapper.setProps({ isAdmin: false });
-        window.alert.mockClear();
+        window.scrollTo.mockClear();
         expect(wrapper.find(FlightCard)).toHaveLength(1);
     });
     it('should check wrapper instance', () => {  
-        window.alert.mockClear();      
+        window.scrollTo.mockClear();      
         expect(wrapper.instance()).toBeTruthy();
     });
     it('should check state content initially', () => {       
-        window.alert.mockClear(); 
+        window.scrollTo.mockClear(); 
         expect(wrapper.instance().state.flightList[0].name).toBe("");
         expect(wrapper.instance().state.flightList[0].airlineNumber).toBe("");
         expect(wrapper.instance().state.flightList[0].price).toBe(0);
         expect(wrapper.instance().state.flightList[0].totalSeats).toBe(0);
     });
     it('should check state content after api call', () => {
-        window.alert.mockClear();
+        window.scrollTo.mockClear();
         wrapper.instance().state = {
             flightList: [
                 {
@@ -57,7 +57,7 @@ describe('<HomePage />', () => {
         expect(wrapper.instance().state.flightList[0].price).toBe(2100);
     });
     it('should check <FlightCard /> length', () => {
-        window.alert.mockClear();
+        window.scrollTo.mockClear();
         wrapper.instance().state = {
             flightList: [{},{},{},{},{},{},{},{},{},{}]
         }
@@ -65,7 +65,7 @@ describe('<HomePage />', () => {
         expect(wrapper.instance().state.flightList).toHaveLength(10);   
     });
     it('should check for props', () => {  
-        window.alert.mockClear();
+        window.scrollTo.mockClear();
         wrapper.setProps({isAdmin: true});
         expect(wrapper.instance().props.isAdmin).toBe(true);   
     });

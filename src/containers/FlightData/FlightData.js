@@ -139,11 +139,6 @@ export class FlightData extends Component {
     }
   }
 
-  handlePNR = (event) => {
-    event.persist();
-    console.log(event);
-  }
-
   render() {
     return (
       <Fragment>

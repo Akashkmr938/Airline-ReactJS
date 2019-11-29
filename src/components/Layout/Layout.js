@@ -3,6 +3,7 @@ import LayoutStyles from './Layout.module.scss';
 import { Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { connect } from 'react-redux';
 
 const FlightData = React.lazy(() => import('../../containers/FlightData/FlightData'));
 const HomePage = React.lazy(() => import('../../containers/HomePage/HomePage'));
@@ -35,4 +36,10 @@ const Layout = () => {
     )
 }
 
-export default Layout;
+const mapStateToProps = state => {
+    return {
+        isAdmin: state.isAdmin,
+    };
+};
+
+export default connect(mapStateToProps)(Layout);

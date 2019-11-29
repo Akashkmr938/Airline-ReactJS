@@ -25,7 +25,7 @@ const CheckInSeats = (props) => {
                 color = '#593276';
             }
         });
-        console.log(seatNum, color);
+        console.log(seatNum, color); 
         return color;
     }
 
