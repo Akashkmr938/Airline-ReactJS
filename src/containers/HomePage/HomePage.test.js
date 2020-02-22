@@ -7,10 +7,22 @@ import FlightCard from '../../components/feature/FlightCard/FlightCard';
 configure({ adapter: new Adapter() });
 window.scrollTo = jest.fn();
 
+let [getFlightDetails] = new Array(1).fill(jest.fn());
+
+const props = {
+    getFlightDetails: getFlightDetails,
+    flightList: [{
+        name: 'akash',
+        airlineNumber: 123,
+        totalSeats: 60,
+        price: 3000
+    }],
+    isAdmin: false
+}
 describe('<HomePage />', () => {
     let wrapper;
     beforeEach(() => {
-        wrapper = shallow(<HomePage />);
+        wrapper = shallow(<HomePage {...props}/>);
     });
 
     it('should render wrapper', () => {
@@ -29,10 +41,10 @@ describe('<HomePage />', () => {
     });
     it('should check state content initially', () => {       
         window.scrollTo.mockClear(); 
-        expect(wrapper.instance().state.flightList[0].name).toBe("");
-        expect(wrapper.instance().state.flightList[0].airlineNumber).toBe("");
-        expect(wrapper.instance().state.flightList[0].price).toBe(0);
-        expect(wrapper.instance().state.flightList[0].totalSeats).toBe(0);
+        expect(props.flightList[0].name).toBe("akash");
+        expect(props.flightList[0].airlineNumber).toBe(123);
+        expect(props.flightList[0].price).toBe(3000);
+        expect(props.flightList[0].totalSeats).toBe(60);
     });
     it('should check state content after api call', () => {
         window.scrollTo.mockClear();

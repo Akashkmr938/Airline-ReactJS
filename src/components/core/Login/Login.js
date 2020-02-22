@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { IS_ADMIN } from './../../../store/actions/types';
+import { IS_ADMIN } from './../../../store/actions/actionTypes';
 import { withRouter } from 'react-router-dom';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LoginStyles from './Login.module.scss';

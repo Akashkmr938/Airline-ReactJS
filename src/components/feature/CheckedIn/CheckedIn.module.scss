@@ -1,9 +1,11 @@
+$heightPixel: 10px;
+
 .wrapper {
-    height: 10px;
+    height: $heightPixel;
     width: 400px;
     position: fixed;
     left: 50%;
-    margin-top: 10px;
+    margin-top: $heightPixel;
     margin-left: -200px;
     font-size: 45px;
 }

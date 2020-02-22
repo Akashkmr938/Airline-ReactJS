@@ -1,3 +1,6 @@
+$pointerValue: pointer;
+
 .logo {
-    cursor: pointer;
+    cursor: $pointerValue;
+    height: 50px;
 }

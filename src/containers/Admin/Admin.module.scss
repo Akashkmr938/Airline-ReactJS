@@ -1,3 +1,7 @@
+@mixin float-right {
+    float: right;
+}
+
 .button {
     margin: 25px;
 }
@@ -7,13 +11,13 @@
 }
 
 .managePassenegrs {
+    @include float-right;
     width: 50%;
-    float: right;
 }
 
 .addons {
+    @include float-right;
     width: 50%;
-    float: right;
 }
 
 .erroList {

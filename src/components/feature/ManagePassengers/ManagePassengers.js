@@ -37,7 +37,7 @@ const ManagePassengers = (props) => {
                 <FormControl className={classes.margin}>
                     <InputLabel htmlFor="input-with-icon-adornment">Last Name:</InputLabel>
                     <Input
-                        id="input-with-icon-adornment"
+                        id="input-with-icon-adornment1"
                         value={props.passsengerDetails.lastName}
                         onChange={(event) => props.handleUpdate(event, 'lastName')}
                         startAdornment={
@@ -49,7 +49,7 @@ const ManagePassengers = (props) => {
                 <FormControl className={classes.margin}>
                     <InputLabel htmlFor="input-with-icon-adornment">Age:</InputLabel>
                     <Input
-                        id="input-with-icon-adornment"
+                        id="input-with-icon-adornment2"
                         value={props.passsengerDetails.age}
                         onChange={(event) => props.handleUpdate(event, 'age')}
                         startAdornment={
@@ -61,7 +61,7 @@ const ManagePassengers = (props) => {
                 <FormControl className={classes.margin}>
                     <InputLabel htmlFor="input-with-icon-adornment">Contact Number:</InputLabel>
                     <Input
-                        id="input-with-icon-adornment"
+                        id="input-with-icon-adornment3"
                         value={props.passsengerDetails.contactNumber}
                         onChange={(event) => props.handleUpdate(event, 'contact')}
                         startAdornment={
@@ -73,7 +73,7 @@ const ManagePassengers = (props) => {
                 <FormControl className={classes.margin}>
                     <InputLabel htmlFor="input-with-icon-adornment">Seat No. (A1-F10):</InputLabel>
                     <Input
-                        id="input-with-icon-adornment"
+                        id="input-with-icon-adornment4"
                         value={props.passsengerDetails.seatNo}
                         onChange={(event) => props.handleUpdate(event, 'seat')}
                         startAdornment={

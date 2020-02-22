@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import PassengerList from '../../components/feature/PasengerList/PassengerList';
 import CheckIn from '../CheckIn/CheckIn';
+import { connect } from 'react-redux';
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -183,4 +184,4 @@ export class FlightData extends Component {
   }
 }
 
-export default FlightData;
+export default connect()(FlightData);

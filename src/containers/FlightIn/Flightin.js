@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { httpGet, httpPut } from '../../utils/api/http-calls';
+import { httpPut, httpGet } from '../../utils/api/http-calls';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,6 +12,8 @@ import PassengerDetails from '../../components/feature/PassengerDetails/Passenge
 import FlightInStyles from './Flightin.module.scss';
 import Addons from '../../components/feature/Addons/Addons';
 import { TextField, Button } from '@material-ui/core';
+import { connect } from 'react-redux';
+import { flightDetails } from '../../store/actions/action';
 
 TabPanel.propTypes = {
     children: PropTypes.node,
@@ -96,7 +98,8 @@ export class FlightIn extends Component {
     }
 
     componentDidMount() {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
+        // this.props.getFlightDetails(this.props.match.params.airlineNumber);
         httpGet('/' + this.props.match.params.airlineNumber).then(getResponse => {
             this.setState({
                 inFlightSeatmap: getResponse.data
@@ -265,4 +268,16 @@ export class FlightIn extends Component {
     }
 }
 
-export default FlightIn;
+const mapStateToProps = (state) => {
+    return {
+        inFlightSeatmap: state.inFlightSeatmap
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getFlightDetails: (airlineNumber) => dispatch(flightDetails(airlineNumber))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(FlightIn);

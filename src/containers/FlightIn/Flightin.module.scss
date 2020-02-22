@@ -1,4 +1,7 @@
+$float_direction: right;
+$margin_right: 200px;
+
 .wrapper {
-    float: right;
-    margin-right: 200px;
+    float: $float_direction;
+    margin-right: $margin_right;
 }

@@ -65,16 +65,16 @@
     {
       "Image": "https://randomuser.me/api/portraits/women/1.jpg",
       "PNR": "1",
-      "age": "25",
+      "age": "2",
       "contactNumber": "9811954290",
       "firstName": "Dolores",
       "id": 1,
       "infants": false,
       "lastName": "Worden",
-      "luggage": "15kg",
-      "meal": "Non-Veg",
+      "luggage": "25kg",
+      "meal": "Veg",
       "payPerView": "Bollywood",
-      "seatNo": "B2"
+      "seatNo": "C8"
     },
     {
       "id": 2,
@@ -85,11 +85,11 @@
       "infants": true,
       "wheelChair": true,
       "PNR": "PQ001XY02",
-      "seatNo": "C5",
+      "seatNo": "E10",
       "Image": "https://randomuser.me/api/portraits/women/2.jpg",
       "meal": "Non-Veg",
       "luggage": "15kg",
-      "payPerView": "Hollywood"
+      "payPerView": "Bollywood"
     },
     {
       "id": 3,

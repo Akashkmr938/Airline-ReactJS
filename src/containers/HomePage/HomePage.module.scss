@@ -1,8 +1,11 @@
+$wrapper_width: 80%;
+$margin_bottom: 20px;
+$padding_top: 35px;
 .wrapper {
-    width: 80%;
-    margin-bottom: 20px;
+    width: $wrapper_width;
+    margin-bottom: $margin_bottom;
 }
 
 .parentWrapper {
-    padding-top: 35px;
+    padding-top: $padding_top;
 }

@@ -74,6 +74,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
+    "start-dev": "run-p start json:server",
     "json:server": "json-server --watch db.json --port 3004",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -96,7 +97,8 @@
   },
   "devDependencies": {
     "eslint": "^6.7.1",
-    "eslint-plugin-react": "^7.16.0"
+    "eslint-plugin-react": "^7.16.0",
+    "npm-run-all": "^4.1.5"
   },
   "jest": {
     "roots": [

@@ -25,6 +25,11 @@ module.exports = {
     ],
     "rules": {
         "react/prop-types": 0,
-        "no-undef" : 0
+        "no-undef": 0
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 };

@@ -1,6 +1,8 @@
+$pointerValue: pointer;
+
 .logoIcon {
   font-size: 2.7rem !important;
-  cursor: pointer;
+  cursor: $pointerValue;
 }
 
 .logoImg {
@@ -9,5 +11,5 @@
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  cursor: pointer;
+  cursor: $pointerValue;
 }

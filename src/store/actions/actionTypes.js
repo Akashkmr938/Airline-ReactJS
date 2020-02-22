@@ -1,0 +1,5 @@
+export const IS_ADMIN = 'IS_ADMIN';
+export const ALL_FLIGHTS = 'ALL_FLIGHTS';
+export const FLIGHT_DETAILS = 'FLIGHT_DETAILS';
+export const UPDATE_PASSENGER = 'UPDATE_PASSENGER';
+export const DELETE_PASSENGER = 'DELETE_PASSENGER';
