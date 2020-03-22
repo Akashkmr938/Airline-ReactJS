@@ -9,7 +9,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import reducers from './store/reducers/reducers';
 
-axios.defaults.baseURL = "http://localhost:3004";
+axios.defaults.baseURL = "https://airline-jsonserver.herokuapp.com";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
