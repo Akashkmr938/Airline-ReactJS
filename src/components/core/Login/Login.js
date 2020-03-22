@@ -52,7 +52,7 @@ class Login extends React.Component {
                 })
             })
         } else {
-            this.props.adminToggle(false);
+            this.props.adminToggle(true);
             localStorage.removeItem('isAdmin');
             this.setState({ imageURL: undefined, userName: undefined, isSignedIn: false });
             this.props.history.push('/');
@@ -87,14 +87,14 @@ class Login extends React.Component {
             return (
                 <Fragment>
                     <img src={this.state.imageURL} onClick={this.handleClick} className={LoginStyles.logoImg} alt="user-profile-pic"></img>
-                    <Menu
+                    {this.state.anchorEl && <Menu
                         id="simple-menu"
                         anchorEl={this.state.anchorEl}
                         keepMounted
                         open={Boolean(this.state.anchorEl)}
                         onClose={this.handleClose}>
                         <MenuItem onClick={this.onSignOutClick}>Logout</MenuItem>
-                    </Menu>
+                    </Menu>}
                 </Fragment>
             );
         } else {
